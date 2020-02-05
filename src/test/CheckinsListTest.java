@@ -10,7 +10,7 @@ public class CheckinsListTest {
         CheckinsService checkinsService=new CheckinsService();
         List<Checkins> list=checkinsService.checkinsList();
         list.forEach(checkins -> {
-            System.out.println(checkins.getCheckintime()+" "+checkins.getNum()+" "+checkins.getPrice());
+            System.out.println(checkins.getCheckintime()+" "+checkins.getNum()+" "+checkins.getPrice()+" "+checkins.getRoomid());
         });
     }
 }
